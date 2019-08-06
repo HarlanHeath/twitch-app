@@ -1,9 +1,18 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import api from "../api";
 function Games() {
+  const [games, setGames] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await api.get(/*need twitch docs link to put here*/);
+      console.log(result.data);
+    };
+    fetchData();
+  });
   return (
     <div>
-      <p>Games Component</p>
+      <h1>Most Popular Games</h1>
     </div>
   );
 }
