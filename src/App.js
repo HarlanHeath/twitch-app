@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Games from "./Components/Games";
 import Streams from "./Components/Streams";
