@@ -20,14 +20,14 @@ function Games() {
       setGames(finalArray);
     };
     fetchData();
-  });
+  }, []);
 
   return (
     <div>
       <h1>Most Popular Games</h1>
       <div className="row">
         {games.map(game => (
-          <div className="col-4">
+          <div className="col-lg-4 col-md-6 col-sm-12 mt5">
             <div className="card">
               <img
                 className="card-img-top"
